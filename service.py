@@ -56,7 +56,7 @@ while not monitor.abortRequested():
     print "############   Checking For EM Update - The Current Ver Is " + AddonName + "  #################"
     path=xbmc.translatePath(os.path.join('special://home','addons','packages'));
     if (ver[0]=="15.2"):
-        url="http://www.the-vibe.co.il/skin/CheckForUpdate";
+        url="https://raw.githubusercontent.com/guymakam/em15.2/master/addon.xml";
         print "########## KODI 15.2 FOR VIBE 2 ################"
     elif (ver[0]!="15.2"):
         url="https://raw.githubusercontent.com/teamThevibe/skin.eminence.zeev/master/addon.xml";
