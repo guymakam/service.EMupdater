@@ -76,7 +76,10 @@ while not monitor.abortRequested():
             confirm = dialog.yesno('Skin Have Update ' + e.attrib['version'] + '', 'Do you wish to install it ? ')
             if confirm:
                 print "####### Starting update !! #############"
-                url="https://github.com/teamThevibe/skin.eminence.zeev/archive/master.zip"
+                if (ver[0]=="15.2"):
+                    url="https://github.com/guymakam/em15.2/archive/master.zip";
+                elif (ver[0]!="15.2"):
+                    url="https://github.com/teamThevibe/skin.eminence.zeev/archive/master.zip";
                 lib=os.path.join(path,'EMUPDATE.zip')
                 libnew=os.path.join(path,'EMUPDATEnew.zip')
                 try:
